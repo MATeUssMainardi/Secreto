@@ -23,7 +23,7 @@ function verificarChute() {
     if (chute == numeroSecreto){
     exibirTextoNatela('h1', 'Acertou!');
     let palavraTentativa = tentativas > 1 ? 'Tentativas' : 'Tentativa';
-    let mensagemTentativas = `Você descobriu o numero secerto ${tentativas} ${palavraTentativa}`;
+    let mensagemTentativas = `Você descobriu o numero secreto ${tentativas} ${palavraTentativa}`;
     exibirTextoNatela('p', mensagemTentativas);
     document.getElementById('reiniciar').removeAttribute('disabled'); // Todas as palavras com maiusculo, menos a primeira. getElementById chama o botão específico do HTML ID, que somente ele tem esse local
     //No HTML o nome da função precisa ter () para ele entender que é uma função aberta para aquelle botão
